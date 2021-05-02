@@ -7,6 +7,8 @@ import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
 import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 
+import javax.xml.bind.JAXBElement;
+
 @Endpoint
 public class PersonEndpoint {
 
@@ -21,6 +23,8 @@ public class PersonEndpoint {
 
 	  //GET PERSON ID
 	  int id = getPersonRequest.getId();
+	  System.out.println(id);
+
 
 	  //CREATE GetPersonResponse
 	  GetPersonResponse getPersonResponse = new GetPersonResponse();
